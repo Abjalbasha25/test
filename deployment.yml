@@ -16,9 +16,7 @@ spec:
     spec:
       containers:
       - name: web-app
-        #image: 980005835410.dkr.ecr.us-east-1.amazonaws.com/test:build_no
-        image: abjaldevops/test:build_no
+        image: 705256538158.dkr.ecr.us-east-1.amazonaws.com/test:latest
         ports:
         - containerPort: 8080
-      imagePullSecrets:
-      - name: dockerhubsecret
+
