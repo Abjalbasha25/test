@@ -23,7 +23,8 @@ pipeline {
         }
         stage('Deploy to EKS') {
              steps{
-               sh ''' kubectl apply -f deployment.yml
+               sh ''' kubectl delete -f deployment.yml
+	              kubectl apply -f deployment.yml
 		      kubectl apply -f service.yml '''
             }
        }
