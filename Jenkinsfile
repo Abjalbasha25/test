@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deploy to EKS') {
              steps{
-               sh "kubectl create -f deployment.yml"
+               sh "kubectl apply -f deployment.yml"
             }
        }
     }
